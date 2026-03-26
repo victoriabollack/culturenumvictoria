@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="pannellum.css"/>
+  <script src="pannellum.js"></script>
+  <style>html, body, #panorama { width:100%; height:100vh; margin:0; }</style>
+</head>
+<body>
+  <div id="panorama"></div>
+  <script>
+    pannellum.viewer('panorama', {
+      type: 'equirectangular',
+      panorama: 'panorama.jpg',
+      autoLoad: true
+    });
+  </script>
+</body>
+</html>
+```
+
+**Structure du repo GitHub :**
+```
+ton-repo/
+├── index.html
+├── pannellum.css
+├── pannellum.js
+└── panorama.jpg
